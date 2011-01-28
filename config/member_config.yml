@@ -1,0 +1,15 @@
+design:
+  _attributes:
+    caption: "Design Configuration"
+    enable_pc:     true
+    enable_mobile: true
+  background:
+    Name:       "background"
+#    Caption:    "Background"
+#    FormType:   "input"
+#    ValueType:  "blog_url"
+#    IsRegist:   false
+#    IsConfig:   true
+#    IsUnique:   false
+#    IsRequired: false
+#    IsConfirm:  false

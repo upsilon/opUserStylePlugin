@@ -1,0 +1,3 @@
+userstyle_design:
+  url: /userstyle/design.css
+  param: { module: userstyle, action: design, sf_format: css }
