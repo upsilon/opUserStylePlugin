@@ -11,14 +11,19 @@ class userstyleActions extends sfActions
 {
   public function executeDesign(sfWebRequest $request)
   {
+    $memberId = $request['id'] ? $request['id'] : $this->getUser()->getMemberId();
+    $this->setViewParameters($memberId);
+  }
+
+  protected function setViewParameters($memberId)
+  {
     static $configs = array(
       'design_background_mode',
       'design_background',
       'design_text',
-      'design_links'
+      'design_links',
     );
 
-    $memberId = $this->getUser()->getMemberId();
     $configTable = Doctrine::getTable('MemberConfig');
     foreach ($configs as $configName)
     {

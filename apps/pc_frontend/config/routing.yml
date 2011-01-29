@@ -1,3 +1,9 @@
 userstyle_design:
   url: /userstyle/design.css
   param: { module: userstyle, action: design, sf_format: css }
+
+userstyle_design_member:
+  url: /userstyle/design/:id.css
+  param: { module: userstyle, action: design, sf_format: css }
+  requirements: { id: \d+ }
+
